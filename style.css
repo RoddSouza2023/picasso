@@ -1,0 +1,73 @@
+html {
+    background-color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30vw 35vw;
+    grid-template-rows: 100vh;
+}
+
+.moon {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+    background-color: rgb(238, 212, 166);
+    margin-left: 20vw;
+    z-index: 0;
+}
+
+.building {
+    display: grid;
+    height: 40vw;
+    width: 60vh;
+    background-color: rgb(73, 71, 71);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    grid-template-columns: 15vh 15vh 15vh 15vh;
+    grid-template-rows: 15vh 15vh 15vh 15vh 18vh;
+    transform: scale(0.80);
+    position: absolute;
+    z-index: 1;
+}
+
+.window {
+    border-radius: 25%;
+    border: solid 0.5vh black;
+    height: 10vh;
+    width: 10vh;
+    margin: 3vh;
+}
+
+.door {
+    border: solid 2px white;
+    border-bottom: none;
+    margin: 1vh;
+    margin-bottom: 0;
+    background-color: grey;
+    z-index: 1;
+}
+
+.door.left{
+    margin-right: 0;
+    border-top-left-radius: 7%;
+    z-index
+}
+
+.door.right {
+    margin-left: 0;
+    border-top-right-radius: 7%;
+}
+
+.window:nth-child(3n), .window:nth-child(7n) {
+    background-color: white;
+}
+
+input, button {
+    margin: 0.4rem 0;
+}
+
+button {
+    width: 5vw;
+}
+
